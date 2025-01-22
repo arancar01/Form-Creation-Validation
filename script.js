@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Display feedback
-        feedbackDiv.style.display = 'block';
+        feedbackDiv.style.display = 'block';  // Show the feedback section
         if (isValid) {
             feedbackDiv.textContent = 'Registration successful!';
             feedbackDiv.style.color = '#28a745'; // Green color for success
         } else {
-            feedbackDiv.innerHTML = messages.join('<br>');
+            feedbackDiv.innerHTML = messages.join('<br>'); // Join error messages with <br> for line breaks
             feedbackDiv.style.color = '#dc3545'; // Red color for errors
         }
     });
